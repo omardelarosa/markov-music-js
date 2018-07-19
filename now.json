@@ -2,5 +2,5 @@
     "type": "static",
     "name": "markov-music-js",
     "alias": ["markov-music"],
-    "files": ["node_modules"]
+    "files": ["index.html", "blank.html", "src", "node_modules", "public"]
 }

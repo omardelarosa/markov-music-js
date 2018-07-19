@@ -8,6 +8,22 @@ iframeSelector: .frame-808-1
 
 ---
 
+# Who Am I?
+
+--
+
+-   My name is **[omar delarosa](https://omardelarosa.com)**.
+
+--
+
+-   I'm a Lead Software Engineer at Grubhub and my team works the Front End of Grubhub, Seamless and Eat24. (We're hiring.)
+
+--
+
+-   I'm also a musician in my spare time.
+
+---
+
 class: center, middle
 
 # What is Music?
@@ -69,17 +85,13 @@ class: center, middle
 
 class: center, middle
 
-### We can do even better.
+### We can do better yet.
 
 ---
 
-class: center, top
-iframeURL: /public/sqcr-demo/html/notes-graph.html
-iframeSelector: .scale-tones-graph-frame
+class: center, middle
 
-#### Markov Chaining of Tones in a Scale
-
-<iframe class="scale-tones-graph-frame" width="100%" height="70%" src="/blank.html" frameborder=0></iframe>
+### By Using _Markov Chains_
 
 ---
 
@@ -95,25 +107,35 @@ _A Markov chain is "a stochastic model describing a sequence of possible events 
 
 ---
 
+class: center, top
+iframeURL: /public/sqcr-demo/html/notes-graph.html
+iframeSelector: .scale-tones-graph-frame
+
+#### Markov Chaining of Tones in a Scale
+
+<iframe class="scale-tones-graph-frame" width="100%" height="70%" src="/blank.html" frameborder=0></iframe>
+
+---
+
 # Markov Chain
 
--   Like a state machine for gamblers
+-   ### Like a state machine for gamblers
 
 --
 
--   Markov models can be "generated" ML-style from a corpus text (or a MIDI file)
+-   ### Markov models can be "generated" ML-style from a corpus text (or a MIDI file)
 
 --
 
--   Data can be represented easily as structured data formats such as JSON
+-   ### Data can be represented easily as structured data formats such as JSON
 
 ---
 
 class: center, middle
 
-# Not what this talk is about.
+## Scope Creep
 
-#### (But consider that food for thought)
+#### (Not what this talk is about)
 
 ---
 
@@ -121,7 +143,7 @@ class: center, middle
 iframeURL: /public/sqcr-demo/html/808.html
 iframeSelector: .frame-808-geez
 
-## What Does This Have To Do With HipHop?
+## What Does This Have To Do With Hip Hop?
 
 <iframe src="/blank.html" width="0" height="0" class="frame-808-geez" frameborder="0"></iframe>
 
@@ -263,14 +285,11 @@ iframeSelector: .frame-akai
 #### Beat Grids as Code
 
 ```javascript
-// Sixteen-element arrays can represent rhythm patterns, but are tough to read.
-const kicks = [1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0];
-
-const snares = [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0];
-
-const hats = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-
-const cowbell = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0];
+// 16-element arrays can represent rhythm patterns, but are tough to read.
+const kicks   = [1,0,1,0,  0,0,1,0,  0,0,1,0,  0,0,1,0]; // prettier-ignore
+const snares  = [0,0,0,0,  1,0,0,0,  0,0,0,0,  1,0,0,0]; // prettier-ignore
+const hats    = [1,1,1,1,  1,1,1,1,  1,1,1,1,  1,1,1,1]; // prettier-ignore
+const cowbell = [0,0,0,0,  0,0,0,0,  0,0,0,0,  1,0,1,0]; // prettier-ignore
 ```
 
 ---
@@ -281,10 +300,10 @@ const cowbell = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0];
 
 ```javascript
 // Easier to read, CPU-trivial preprocessing
-const kicks = fmt('1010 0010 0010 0010');
-const snares = fmt('0000 1000 0000 1000');
-const hats = fmt('1111 1111 1111 1111');
-const cowbell = fmt('0000 0000 0000 01010');
+const kicks   = fmt('1010 0010 0010 0010'); // prettier-ignore
+const snares  = fmt('0000 1000 0000 1000'); // prettier-ignore
+const hats    = fmt('1111 1111 1111 1111'); // prettier-ignore
+const cowbell = fmt('0000 0000 0000 01010'); // prettier-ignore
 ```
 
 ---
@@ -513,9 +532,9 @@ iframeSelector: .matrix-16x8
 
 #### Links
 
--   [Tone.js]()
--   [Tonal]()
--   [vis.js]()
--   [Andrew Sorensen]()
--   [Sam Aaron]()
--   [sqcr]()
+-   [Tone.js - full features JS code library](https://tonejs.github.io/)
+-   [Tonal - music haromony / scales library](https://github.com/danigb/tonal)
+-   [vis.js - dataviz library](http://visjs.org/)
+-   [Andrew Sorensen - "The Concert Programmer"](https://www.youtube.com/watch?v=yY1FSsUV-8c)
+-   [Sam Aaron - Creator of SonicPi](https://sonic-pi.net/)
+-   [sqcr - a JS sequencer server I made to run some of the code in these slides](https://github.com/omardelarosa/sqcr)

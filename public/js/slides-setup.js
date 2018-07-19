@@ -2,6 +2,7 @@ var BLANK_PAGE_URL = '/public/blank.html';
 var slideshow = remark.create({
     sourceUrl: '/public/sqcr-demo/md/generative-hip-hop-slides.md',
     highlightStyle: 'monokai',
+    touch: false,
 });
 
 slideshow.on('showSlide', function(slide) {
