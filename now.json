@@ -1,0 +1,6 @@
+{
+    "type": "static",
+    "name": "markov-music-js",
+    "alias": ["markov-music"],
+    "files": ["node_modules"]
+}
