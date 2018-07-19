@@ -553,8 +553,7 @@ iframeSelector: .matrix-16x8
 ###### Links
 
 -   [Tone.js - full features JS code library](https://tonejs.github.io/)
--   [Tonal - music haromony / scales library](https://github.com/danigb/tonal)
 -   [vis.js - dataviz library](http://visjs.org/)
--   [Andrew Sorensen - "The Concert Programmer"](https://www.youtube.com/watch?v=yY1FSsUV-8c)
--   [Sam Aaron - Creator of SonicPi](https://sonic-pi.net/)
 -   [sqcr - a JS sequencer server I made to run some of the code in these slides](https://github.com/omardelarosa/sqcr)
+-   [Chris Wilson - "A Tale of Two Clocks"](https://www.html5rocks.com/en/tutorials/audio/scheduling/#toc-usingsettimeout)
+-   [Andrew Sorensen - "The Concert Programmer"](https://www.youtube.com/watch?v=yY1FSsUV-8c)
