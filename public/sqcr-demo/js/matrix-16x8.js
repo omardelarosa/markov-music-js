@@ -110,7 +110,9 @@ loop('snares', async ctx => {
 });
 
 loop('vocals', async ctx => {
-    playInst(sampler, _sample(DRAKE), 8 * 1000);
+    if (LEVELS.vocals) playInst(sampler, _sample(DRAKE), 8 * 1000);
+    // Update a bit more frequently
+    LEVELS.vocals = MC_LEVELS.next();
     ctx.sleep(M * 4);
 });
 

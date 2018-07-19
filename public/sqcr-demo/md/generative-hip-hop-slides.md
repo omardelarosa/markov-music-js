@@ -6,21 +6,30 @@ iframeSelector: .frame-808-1
 
 <iframe src="/blank.html" width="0" height="0" class="frame-808-1" frameborder="0"></iframe>
 
+???
+Sound check. Reset clock before starting.
+
+---
+
+class: center, middle
+
+# Who Am I?
+
 ---
 
 # Who Am I?
 
 --
 
--   My name is **[omar delarosa](https://omardelarosa.com)**.
+-   I'm **[omar delarosa](https://omardelarosa.com)**.
 
 --
 
--   I'm a Lead Software Engineer at Grubhub and my team works the Front End of Grubhub, Seamless and Eat24. (We're hiring.)
+-   I'm a Lead Software Engineer at Grubhub Seamless. (We're hiring.)
 
 --
 
--   I'm also a musician in my spare time.
+-   I play music in my spare time.
 
 ---
 
@@ -75,6 +84,9 @@ iframeSelector: .scale-tones-frame
 
 <iframe class="scale-tones-frame" width="100%" src="/blank.html" frameborder=0></iframe>
 
+???
+Avoid talking over synths
+
 ---
 
 class: center, middle
@@ -115,25 +127,28 @@ iframeSelector: .scale-tones-graph-frame
 
 <iframe class="scale-tones-graph-frame" width="100%" height="70%" src="/blank.html" frameborder=0></iframe>
 
+???
+Avoid talking over synths
+
 ---
 
 # Markov Chain
 
--   ### Like a state machine for gamblers
+-   Is like a state machine for gamblers
 
 --
 
--   ### Markov models can be "generated" ML-style from a corpus text (or a MIDI file)
+-   Markov chain models can be "generated" ML-style from a corpus text (or a MIDI file)
 
 --
 
--   ### Data can be represented easily as structured data formats such as JSON
+-   Data can be represented and stored easily as structured data formats such as JSON
 
 ---
 
 class: center, middle
 
-## Scope Creep
+## Slide Scope Creep
 
 #### (Not what this talk is about)
 
@@ -209,15 +224,15 @@ class: center, middle
 
 --
 
--   1/4 Note <img src="https://i.imgur.com/ChUoGvo.png" width=200 />
+-   **1/4** Note <img src="https://i.imgur.com/ChUoGvo.png" width=200 />
 
 --
 
--   1/8 Note <img src="https://i.imgur.com/E5SC08v.png" width=200 />
+-   **1/8** Note <img src="https://i.imgur.com/E5SC08v.png" width=200 />
 
 --
 
--   1/16 Note <img src="https://i.imgur.com/ALcpf8n.png" width=200 />
+-   **1/16** Note <img src="https://i.imgur.com/ALcpf8n.png" width=200 />
 
 ---
 
@@ -276,7 +291,9 @@ iframeSelector: .frame-akai
 
 -   Centered around 1/16th note ticks
 
--   Can be very manual and difficult to do programmatically.
+-   Can be difficult to "escape the grid" with durations < 1/16.
+
+-   Also tough to use subdivisions that are multiples of 3.
 
 ---
 
@@ -385,6 +402,9 @@ iframeSelector: .scale-tones-graph-frame2
 
 <iframe class="scale-tones-graph-frame2" width="100%" height="70%" src="/blank.html" frameborder=0></iframe>
 
+???
+Avoid talking over synths
+
 ---
 
 class: center, top
@@ -394,6 +414,9 @@ iframeSelector: .scale-chords-graph-frame
 #### Markov Chaining of Chords in a Scale
 
 <iframe class="scale-chords-graph-frame" width="100%" height="70%" src="/blank.html" frameborder=0></iframe>
+
+???
+Avoid talking over synths
 
 ---
 
@@ -463,7 +486,7 @@ const mc = new MarkovChain(G, NOTES);
 ```javascript
 const CHORDS = ['C maj', 'D min', 'E min', 'F maj', 'G maj', 'A min', 'B dim'];
 
-// Favors I <-> IV, VI -> I cadences
+// Favors I <-> IV, V -> I cadences
 const G = {
     '0': [3, 3, 3, 5],
     '1': [2, 5],
@@ -508,29 +531,26 @@ const G = {
 
 # And So...
 
--   Tones, Melodies Chords, Beats, Measures, etc. can be thought of as "states"
+-   Tones, Melodies Chords, Beats, Measures, etc. can be thought of as "states" in a markov chin
 
 --
 
--   Each new "state" depends on the previous state (i.e. randomly selecting states sounds pretty bad.)
+-   This can create more natural sounding compositions than brute force randomization.
 
 --
 
--   We can describe how the states relate to each other as what the weighted probabilities are of one state transitioning into another.
+-   `MarkovChain` is a data model and thus framework/library agnostic.
 
 ---
 
-class: center, top
 iframeURL: /public/sqcr-demo/html/matrix-16x8.html
 iframeSelector: .matrix-16x8
 
-### The End
+### Thanks
 
 <iframe class="matrix-16x8" width="560" height="315" src="/blank.html" frameborder="0"></iframe>
 
----
-
-#### Links
+###### Links
 
 -   [Tone.js - full features JS code library](https://tonejs.github.io/)
 -   [Tonal - music haromony / scales library](https://github.com/danigb/tonal)

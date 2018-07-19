@@ -33,7 +33,7 @@ LEVELS = {
     kicks: 1,
     snares: 0,
     hats: 1,
-    vocals: 1,
+    vocals: 0,
 };
 
 MC_LEVELS = new MarkovChain(
