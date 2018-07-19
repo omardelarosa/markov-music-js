@@ -1,0 +1,20 @@
+body,
+html,
+div {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.k-row {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+}

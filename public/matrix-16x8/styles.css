@@ -1,0 +1,75 @@
+div {
+    min-height: 80px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.k-row {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+}
+
+.k-col {
+    color: white;
+    height: 80px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.red-box {
+    background-color: red;
+    filter: blur(2px);
+}
+
+.blank-box {
+    background-color: white;
+}
+
+.colorize {
+    background-color: yellow;
+}
+
+.colorize-0 {
+    background-color: red;
+    /* filter: blur(2px); */
+}
+
+.colorize-1 {
+    background-color: green;
+    /* filter: blur(2px); */
+}
+
+.colorize-2 {
+    background-color: yellow;
+    /* filter: blur(2px); */
+}
+
+.colorize-3 {
+    background-color: blue;
+    /* filter: blur(2px); */
+}
+
+.colorize-4 {
+    background-color: pink;
+    /* filter: blur(2px); */
+}
+
+.colorize-1.colorize-3 {
+    background-color: orange;
+}
+
+.colorize-2.colorize-3 {
+    background-color: green;
+}
+
+.colorize-4.colorize-1 {
+    background-color: teal;
+}
+
+.colorize-2.colorize-1 {
+    background-color: orange;
+}

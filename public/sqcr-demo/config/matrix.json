@@ -1,0 +1,15 @@
+{
+    "libs": [
+        "/node_modules/webmidi/webmidi.min.js",
+        "/node_modules/osc/dist/osc-browser.js",
+        "/node_modules/tonal/build/transpiled.js",
+        "/node_modules/tone/build/Tone.min.js",
+        "/node_modules/sqcr/lib/browser.js",
+        "/public/sqcr-demo/sqcr-setup.js",
+        "/public/sqcr-demo/buffers/init.js",
+        "/public/sqcr-demo/buffers/synths.js",
+        "/public/sqcr-demo/buffers/loops.js",
+        "/public/sqcr-demo/visualizer.js"
+    ],
+    "rendererPath": "public/sqcr-demo/renderers/matrix-renderer.js"
+}

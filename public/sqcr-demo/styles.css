@@ -1,0 +1,68 @@
+/**
+ * Color Pallette:
+ * 1 - #ccfa99
+ * 2 - #faf099
+ * 3 - #99f0fa
+ * 4 - #fa99f0
+ * 5 - #cc99fa
+ *
+ */
+
+div {
+    min-height: 15px;
+}
+
+html,
+body,
+div {
+    background-color: #fa99f0;
+}
+
+.k-col {
+    height: 15px;
+}
+
+.icon-link {
+    text-decoration: none;
+}
+
+.colorize {
+    background-color: #faf099;
+}
+
+.colorize-0 {
+    background-color: #ff0086;
+}
+
+.colorize-1 {
+    background-color: #ccfa99;
+}
+
+.colorize-2 {
+    background-color: #faf099;
+}
+
+.colorize-3 {
+    background-color: #99f0fa;
+}
+
+.colorize-4 {
+    background-color: #fa99f0;
+    /* filter: blur(2px); */
+}
+
+.colorize-1.colorize-3 {
+    background-color: #ff7900;
+}
+
+.colorize-2.colorize-3 {
+    background-color: #39ff14;
+}
+
+.colorize-4.colorize-1 {
+    background-color: #99f0fa;
+}
+
+.colorize-2.colorize-1 {
+    background-color: #ff7900;
+}

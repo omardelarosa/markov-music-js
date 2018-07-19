@@ -1,0 +1,25 @@
+{
+    "name": "markov-music-js",
+    "main": "index.js",
+    "version": "0.0.1",
+    "description":
+        "Example of how to use markov chaining to make music in javascript",
+    "author": "Omar Delarosa",
+    "scripts": {
+        "start:slides": "npm run start:sqcr-demo:slider",
+        "start:sqcr-demo:matrix":
+            "sqcr public/sqcr-demo/buffers --config public/sqcr-demo/config/matrix.json --path .",
+        "start:sqcr-demo:slider":
+            "sqcr public/sqcr-demo/buffers --config public/sqcr-demo/config/presentation.json --path ."
+    },
+    "dependencies": {
+        "express": "4.16.3",
+        "meow": "5.0.0",
+        "sqcr": "omardelarosa/sqcr#release-v1.1.1",
+        "tonal": "1.1.3",
+        "tone": "0.12.80",
+        "vis": "4.21.0",
+        "webmidi": "2.2.0",
+        "ws": "5.1.1"
+    }
+}

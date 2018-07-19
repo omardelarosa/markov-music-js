@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled - osc.js demo</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all" href="/public/css/grid.css"></link>
+    <link rel="stylesheet" type="text/css" media="all" href="/public/css/global.css"></link>
+
+    <link rel="stylesheet" type="text/css" media="all" href="/public/matrix-16x8/styles.css"></link>
+    <link rel="stylesheet" type="text/css" media="all" href="/public/sqcr-demo/styles.css"></link>
+    <script src="/src/Markov.js"></script>
+    <script src="/node_modules/webmidi/webmidi.min.js"></script>
+    <script src="/node_modules/tonal/build/transpiled.js"></script>
+    <script src="/node_modules/tone/build/Tone.min.js"></script>
+    <script src="/node_modules/sqcr/lib/standalone.js"></script>
+    <script src="/public/sqcr-demo/sqcr-setup.js"></script>
+    <script src="/public/sqcr-demo/buffers/init.js"></script>
+    <script src="/public/sqcr-demo/buffers/synths.js"></script>
+    <script src="/public/sqcr-demo/visualizer.js"></script>
+<style>
+.img-container {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+    <div class='img-container'>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Roland_TR-808_%28large%29.jpg/1024px-Roland_TR-808_%28large%29.jpg"/>
+    </div>
+    <script>
+    loop('kicks', async ctx => {
+        const pulse = beatFromTick(ctx.tick);
+        // Switch pattern on the 0
+        if (pulse === 0) kick_pattern = _sample(kicks);
+        if (!kick_pattern[pulse]) return ctx.sleep(T / 4);
+
+        // Play kick beat
+        playInst(sampler, NOTE_KICK);
+
+        ctx.sleep(T / 4);
+    });
+
+    loop('hats', async ctx => {
+        hats_pattern = hats[MC_HATS.peekID()];
+        max = hats_pattern[1];
+        t = hats_pattern[0];
+
+        playInst(sampler, NOTE_HAT);
+
+        if (h_counter >= max - 1) {
+            MC_HATS.next();
+            h_counter = 0;
+        } else {
+            h_counter++;
+        }
+
+        ctx.sleep(t);
+    });
+
+    loop('snares', async ctx => {
+        const pulse = beatFromTick(ctx.tick);
+        // // Switch pattern on the 0
+        if (pulse === 0) snares_pattern = _sample(snares);
+        if (!snares_pattern[pulse]) return ctx.sleep(T / 4);
+        playInst(sampler, NOTE_CLAP);
+        ctx.sleep(T / 4);
+    });
+    sqcr.start();
+    </script>
+</body>
+</html>

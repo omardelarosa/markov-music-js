@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Matrix 16x8 - osc.js demo</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" media="all" href="/css/grid.css"></link>
+        <link rel="stylesheet" type="text/css" media="all" href="/css/global.css"></link>
+        <link rel="stylesheet" type="text/css" media="all" href="/matrix-16x8/styles.css"></link>
+
+        <script src="/node_modules/osc/dist/osc-browser.js"></script>
+        <script src="/matrix-16x8/matrix-visualizer.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+          <div class="k-row r-1">
+            <div class="k-col k-c-16 k-center blank-box k-1"></div>
+            <div class="k-col k-c-16 k-center blank-box k-2"></div>
+            <div class="k-col k-c-16 k-center blank-box k-3"></div>
+            <div class="k-col k-c-16 k-center blank-box k-4"></div>
+            <div class="k-col k-c-16 k-center blank-box k-5"></div>
+            <div class="k-col k-c-16 k-center blank-box k-6"></div>
+            <div class="k-col k-c-16 k-center blank-box k-7"></div>
+            <div class="k-col k-c-16 k-center blank-box k-8"></div>
+            <div class="k-col k-c-16 k-center blank-box k-9"></div>
+            <div class="k-col k-c-16 k-center blank-box k-10"></div>
+            <div class="k-col k-c-16 k-center blank-box k-11"></div>
+            <div class="k-col k-c-16 k-center blank-box k-12"></div>
+            <div class="k-col k-c-16 k-center blank-box k-13"></div>
+            <div class="k-col k-c-16 k-center blank-box k-14"></div>
+            <div class="k-col k-c-16 k-center blank-box k-15"></div>
+            <div class="k-col k-c-16 k-center blank-box k-16"></div>
+          </div>
+          <div class="k-row r-2">
+            <div class="k-col k-c-16 k-center blank-box k-1"></div>
+            <div class="k-col k-c-16 k-center blank-box k-2"></div>
+            <div class="k-col k-c-16 k-center blank-box k-3"></div>
+            <div class="k-col k-c-16 k-center blank-box k-4"></div>
+            <div class="k-col k-c-16 k-center blank-box k-5"></div>
+            <div class="k-col k-c-16 k-center blank-box k-6"></div>
+            <div class="k-col k-c-16 k-center blank-box k-7"></div>
+            <div class="k-col k-c-16 k-center blank-box k-8"></div>
+            <div class="k-col k-c-16 k-center blank-box k-9"></div>
+            <div class="k-col k-c-16 k-center blank-box k-10"></div>
+            <div class="k-col k-c-16 k-center blank-box k-11"></div>
+            <div class="k-col k-c-16 k-center blank-box k-12"></div>
+            <div class="k-col k-c-16 k-center blank-box k-13"></div>
+            <div class="k-col k-c-16 k-center blank-box k-14"></div>
+            <div class="k-col k-c-16 k-center blank-box k-15"></div>
+            <div class="k-col k-c-16 k-center blank-box k-16"></div>
+          </div>
+          <div class="k-row r-3">
+            <div class="k-col k-c-16 k-center blank-box k-1"></div>
+            <div class="k-col k-c-16 k-center blank-box k-2"></div>
+            <div class="k-col k-c-16 k-center blank-box k-3"></div>
+            <div class="k-col k-c-16 k-center blank-box k-4"></div>
+            <div class="k-col k-c-16 k-center blank-box k-5"></div>
+            <div class="k-col k-c-16 k-center blank-box k-6"></div>
+            <div class="k-col k-c-16 k-center blank-box k-7"></div>
+            <div class="k-col k-c-16 k-center blank-box k-8"></div>
+            <div class="k-col k-c-16 k-center blank-box k-9"></div>
+            <div class="k-col k-c-16 k-center blank-box k-10"></div>
+            <div class="k-col k-c-16 k-center blank-box k-11"></div>
+            <div class="k-col k-c-16 k-center blank-box k-12"></div>
+            <div class="k-col k-c-16 k-center blank-box k-13"></div>
+            <div class="k-col k-c-16 k-center blank-box k-14"></div>
+            <div class="k-col k-c-16 k-center blank-box k-15"></div>
+            <div class="k-col k-c-16 k-center blank-box k-16"></div>
+          </div>
+          <div class="k-row r-4">
+            <div class="k-col k-c-16 k-center blank-box k-1"></div>
+            <div class="k-col k-c-16 k-center blank-box k-2"></div>
+            <div class="k-col k-c-16 k-center blank-box k-3"></div>
+            <div class="k-col k-c-16 k-center blank-box k-4"></div>
+            <div class="k-col k-c-16 k-center blank-box k-5"></div>
+            <div class="k-col k-c-16 k-center blank-box k-6"></div>
+            <div class="k-col k-c-16 k-center blank-box k-7"></div>
+            <div class="k-col k-c-16 k-center blank-box k-8"></div>
+            <div class="k-col k-c-16 k-center blank-box k-9"></div>
+            <div class="k-col k-c-16 k-center blank-box k-10"></div>
+            <div class="k-col k-c-16 k-center blank-box k-11"></div>
+            <div class="k-col k-c-16 k-center blank-box k-12"></div>
+            <div class="k-col k-c-16 k-center blank-box k-13"></div>
+            <div class="k-col k-c-16 k-center blank-box k-14"></div>
+            <div class="k-col k-c-16 k-center blank-box k-15"></div>
+            <div class="k-col k-c-16 k-center blank-box k-16"></div>
+          </div>
+          <div class="k-row r-5">
+            <div class="k-col k-c-16 k-center blank-box k-1"></div>
+            <div class="k-col k-c-16 k-center blank-box k-2"></div>
+            <div class="k-col k-c-16 k-center blank-box k-3"></div>
+            <div class="k-col k-c-16 k-center blank-box k-4"></div>
+            <div class="k-col k-c-16 k-center blank-box k-5"></div>
+            <div class="k-col k-c-16 k-center blank-box k-6"></div>
+            <div class="k-col k-c-16 k-center blank-box k-7"></div>
+            <div class="k-col k-c-16 k-center blank-box k-8"></div>
+            <div class="k-col k-c-16 k-center blank-box k-9"></div>
+            <div class="k-col k-c-16 k-center blank-box k-10"></div>
+            <div class="k-col k-c-16 k-center blank-box k-11"></div>
+            <div class="k-col k-c-16 k-center blank-box k-12"></div>
+            <div class="k-col k-c-16 k-center blank-box k-13"></div>
+            <div class="k-col k-c-16 k-center blank-box k-14"></div>
+            <div class="k-col k-c-16 k-center blank-box k-15"></div>
+            <div class="k-col k-c-16 k-center blank-box k-16"></div>
+          </div>
+          <div class="k-row r-6">
+            <div class="k-col k-c-16 k-center blank-box k-1"></div>
+            <div class="k-col k-c-16 k-center blank-box k-2"></div>
+            <div class="k-col k-c-16 k-center blank-box k-3"></div>
+            <div class="k-col k-c-16 k-center blank-box k-4"></div>
+            <div class="k-col k-c-16 k-center blank-box k-5"></div>
+            <div class="k-col k-c-16 k-center blank-box k-6"></div>
+            <div class="k-col k-c-16 k-center blank-box k-7"></div>
+            <div class="k-col k-c-16 k-center blank-box k-8"></div>
+            <div class="k-col k-c-16 k-center blank-box k-9"></div>
+            <div class="k-col k-c-16 k-center blank-box k-10"></div>
+            <div class="k-col k-c-16 k-center blank-box k-11"></div>
+            <div class="k-col k-c-16 k-center blank-box k-12"></div>
+            <div class="k-col k-c-16 k-center blank-box k-13"></div>
+            <div class="k-col k-c-16 k-center blank-box k-14"></div>
+            <div class="k-col k-c-16 k-center blank-box k-15"></div>
+            <div class="k-col k-c-16 k-center blank-box k-16"></div>
+          </div>
+          <div class="k-row r-7">
+            <div class="k-col k-c-16 k-center blank-box k-1"></div>
+            <div class="k-col k-c-16 k-center blank-box k-2"></div>
+            <div class="k-col k-c-16 k-center blank-box k-3"></div>
+            <div class="k-col k-c-16 k-center blank-box k-4"></div>
+            <div class="k-col k-c-16 k-center blank-box k-5"></div>
+            <div class="k-col k-c-16 k-center blank-box k-6"></div>
+            <div class="k-col k-c-16 k-center blank-box k-7"></div>
+            <div class="k-col k-c-16 k-center blank-box k-8"></div>
+            <div class="k-col k-c-16 k-center blank-box k-9"></div>
+            <div class="k-col k-c-16 k-center blank-box k-10"></div>
+            <div class="k-col k-c-16 k-center blank-box k-11"></div>
+            <div class="k-col k-c-16 k-center blank-box k-12"></div>
+            <div class="k-col k-c-16 k-center blank-box k-13"></div>
+            <div class="k-col k-c-16 k-center blank-box k-14"></div>
+            <div class="k-col k-c-16 k-center blank-box k-15"></div>
+            <div class="k-col k-c-16 k-center blank-box k-16"></div>
+          </div>
+          <div class="k-row r-8">
+            <div class="k-col k-c-16 k-center blank-box k-1"></div>
+            <div class="k-col k-c-16 k-center blank-box k-2"></div>
+            <div class="k-col k-c-16 k-center blank-box k-3"></div>
+            <div class="k-col k-c-16 k-center blank-box k-4"></div>
+            <div class="k-col k-c-16 k-center blank-box k-5"></div>
+            <div class="k-col k-c-16 k-center blank-box k-6"></div>
+            <div class="k-col k-c-16 k-center blank-box k-7"></div>
+            <div class="k-col k-c-16 k-center blank-box k-8"></div>
+            <div class="k-col k-c-16 k-center blank-box k-9"></div>
+            <div class="k-col k-c-16 k-center blank-box k-10"></div>
+            <div class="k-col k-c-16 k-center blank-box k-11"></div>
+            <div class="k-col k-c-16 k-center blank-box k-12"></div>
+            <div class="k-col k-c-16 k-center blank-box k-13"></div>
+            <div class="k-col k-c-16 k-center blank-box k-14"></div>
+            <div class="k-col k-c-16 k-center blank-box k-15"></div>
+            <div class="k-col k-c-16 k-center blank-box k-16"></div>
+          </div>
+        </div>
+        <script>
+            window.initOSC();
+        </script>
+    </body>
+</html>

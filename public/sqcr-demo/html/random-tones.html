@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled - osc.js demo</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all" href="/public/css/grid.css"></link>
+    <link rel="stylesheet" type="text/css" media="all" href="/public/css/global.css"></link>
+
+    <link rel="stylesheet" type="text/css" media="all" href="/public/matrix-16x8/styles.css"></link>
+    <link rel="stylesheet" type="text/css" media="all" href="/public/sqcr-demo/styles.css"></link>
+    <script src="/node_modules/tone/build/Tone.min.js"></script>
+<style>
+.frequency {
+    font-size: 2.0em;
+    font-weight: bold;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <div class='frequency'></div>
+    <script>
+        var note = null;
+        var duration = 500;
+        var $el = document.querySelector('.frequency');
+
+        function rand() {
+            return Math.round(Math.random() * 60) + 100;
+        }
+
+        var synth = new Tone.Synth({
+			"oscillator" : {
+				"type" : "amtriangle",
+				"harmonicity" : 0.5,
+				"modulationType" : "sine"
+			},
+			"envelope" : {
+				"attackCurve" : 'exponential',
+				"attack" : 0.05,
+				"decay" : 0.2,
+				"sustain" : 0.2,
+				"release" : 1.5,
+			},
+			"portamento" : 0.05
+		}).toMaster();
+
+        setInterval(() => {
+            note = rand();
+            synth.triggerAttackRelease(note, duration);
+            $el.innerHTML = `${Math.round(new Tone.Frequency(note, 'midi').valueOf())}hz`;
+        }, duration);
+    </script>
+</body>
+
+</html>
