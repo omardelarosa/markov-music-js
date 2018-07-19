@@ -550,10 +550,9 @@ iframeSelector: .matrix-16x8
 
 <iframe class="matrix-16x8" width="560" height="315" src="/blank.html" frameborder="0"></iframe>
 
-###### Links
-
 -   [Tone.js - full features JS code library](https://tonejs.github.io/)
 -   [vis.js - dataviz library](http://visjs.org/)
 -   [sqcr - a JS sequencer server I made to run some of the code in these slides](https://github.com/omardelarosa/sqcr)
 -   [Chris Wilson - "A Tale of Two Clocks"](https://www.html5rocks.com/en/tutorials/audio/scheduling/#toc-usingsettimeout)
 -   [Andrew Sorensen - "The Concert Programmer"](https://www.youtube.com/watch?v=yY1FSsUV-8c)
+-   [Sam Aaron - "Programming as Performance"](https://www.youtube.com/watch?v=TK1mBqKvIyU)
